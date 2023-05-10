@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Dictionary App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="dictionary.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Link for Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <script src="https://kit.fontawesome.com/6e98bd8c50.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </span>
+      <div class="media-icons">
+        <a href="#" style="background: #e60023">
+          <i class="fa-light fa-cloud"></i>
+          <span class="tooltip" style="color: #4D59FB">Pinterest</span>
+        </a>
+        <a href="#" style="background: #0e76a8">
+          <i class="fa-brands fa-linkedin"></i>
+          <span class="tooltip" style="color:#4D59FB">Linkedin</span>
+        </a>
+        <a href="#" style="background: #ff0000">
+          <i class="fa-brands fa-youtube"></i>
+          <span class="tooltip" style="color: #4D59FB">YouTube</span>
+        </a>
+        <a href="#" style="background: #ea4689">
+          <i class="fa-brands fa-dribbble"></i>
+          <span class="tooltip" style="color:#4D59FB">Dribbble</span>
+        </a>
+       
+      </div>
+    </div>
+    <script>
+      const closeBtn = document.querySelector(".close-btn");
+      closeBtn.addEventListener("click", () => {
+        closeBtn.classList.toggle("open");
+      });
+    </script>
+   
+    <section></section>
+    <div class="wrapper">
+      <header>English Dictionary</header>
+      <div class="search">
+        <input type="text" placeholder="Search a word" required spellcheck="false">
+        <i class="fas fa-search"></i>
+        <span class="material-icons">close</span>
+      </div>
+      <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+      <ul>
+        <li class="word">
+          <div class="details">
+            <p>__</p>
+            <span>_ _</span>
+          </div>
+          <i class="fas fa-volume-up"></i>
+        </li>
+        <div class="content">
+          <li class="meaning">
+            <div class="details">
+              <p>Meaning</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="example">
+            <div class="details">
+              <p>Example</p>
+              <span>___</span>
+            </div>
+          </li>
+          <li class="synonyms">
+            <div class="details">
+              <p>Synonyms</p>
+              <div class="list"></div>
+            </div>
+          </li>
+        </div>
+      </ul>
+    </div>
+
+    <script src="dictionary.js"></script>
+
+  </body>
+</html>
